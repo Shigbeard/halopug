@@ -15,7 +15,9 @@ RUN apt-get update && \
     wine64 \
     libwine \
     libwine:i386 \
-    fonts-wine
+    fonts-wine \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get clean
 
 USER ${USER}
 
