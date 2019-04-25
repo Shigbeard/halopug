@@ -7,18 +7,13 @@ eldewrito server containers, at the bequest of a bot.
 
 Features with a ticked check box are """theoretically""" ready.
 
-[*] Prebuilt image containing eldewrito server files and configured to 
-replace certain config vars according to container env vars
-[*] (Partially Complete) Entrypoint.sh file which facilitates the 
-running of the server.
-  - [ ] Auto Restart
-  - [ ] Remote Service Monitoring (look into communicating directly 
-with the docker daemon, like ptereodactyl panel)
-[ ] Discord bot that deploys, monitors, and destroys containers upon 
-command.
-  - [ ] Configured to limit container resources so laggy servers don't 
-impact other servers.
-  - [ ] Store game logs from each server
+ - [x] Prebuilt image containing eldewrito server files and configured to replace certain config vars according to container env vars
+ - [x] (Partially Complete) Entrypoint.sh file which facilitates the running of the server.
+ - [ ] Auto Restart game servers if they crash.
+ - [ ] Remote Service Monitoring (look into communicating directly with the docker daemon, like ptereodactyl panel)
+ - [ ] Discord bot that deploys, monitors, and destroys containers upon command.
+ - [ ] Configured to limit container resources so laggy servers don't impact other servers.
+ - [ ] Store game logs from each server
 
 ## Notes
 
