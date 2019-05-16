@@ -27,7 +27,8 @@ USER ${USER}
 
 WORKDIR ${HOME}
 
-COPY ./eldewrito /eldewrito
+COPY ./eldewrito ./eldewrito
+
 ENV RCONPORT=11776 OTHERPORT=11775 GAMEPORT=11774 MESSAGE="PUG Server booked by Unknown - discord.gg/abc123" SERVERNAME="Halo OCE Pug Server #1" SERVERPASSWORD="abc123" RCONPASSWORD="abc123" PLAYERNAME="Unknown"
 
 COPY ./entrypoint.sh /entrypoint.sh
