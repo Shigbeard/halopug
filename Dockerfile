@@ -16,6 +16,7 @@ RUN apt-get update && \
     libwine \
     libwine:i386 \
     fonts-wine \
+    xvfb \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
 

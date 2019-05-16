@@ -1,6 +1,8 @@
 #!/bin/bash
 cd /home/container/eldewrito
 
+Xvfb :1 -screen 0 1024x768x24 </dev/null & export DISPLAY=":1"
+
 # Read Environment Vars and modify config accordingly
 # I can hear flutters screaming right now
 cat dewrito_prefs.cfg \
